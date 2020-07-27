@@ -47,7 +47,7 @@ Where `finalPosition` is the final coordinates of the cleaner and `oilPatchesCle
 ## Start instructions:
 Please run the command `./mvnw spring-boot:run` in order to start the application
 
-If you would rather run a docker container, it can be downloaded here:
+If you would rather run a docker container, it can be downloaded with this command: `docker pull mywtaylor/seacleaner`
 
 The application runs on port `8080` by default, and has only 1 endpoint, which accepts a PUT request on the path `/instructions`
 For example, via Postman you could: `PUT http://localhost:8080/instructions` with the body defined above
