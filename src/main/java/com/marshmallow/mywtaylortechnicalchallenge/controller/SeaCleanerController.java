@@ -1,8 +1,8 @@
-package com.marshmallow.yemitechnicalchallenge.controller;
+package com.marshmallow.mywtaylortechnicalchallenge.controller;
 
-import com.marshmallow.yemitechnicalchallenge.model.CoordinatesResponse;
-import com.marshmallow.yemitechnicalchallenge.model.Instructions;
-import com.marshmallow.yemitechnicalchallenge.service.SeaCleanerService;
+import com.marshmallow.mywtaylortechnicalchallenge.model.CoordinatesResponse;
+import com.marshmallow.mywtaylortechnicalchallenge.model.Instructions;
+import com.marshmallow.mywtaylortechnicalchallenge.service.SeaCleanerService;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;

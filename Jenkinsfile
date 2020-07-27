@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-    pollSCM '* * * * *'
+        pollSCM '* * * * *'
     }
     stages {
         stage('Build') {
@@ -12,6 +12,11 @@ pipeline {
         stage('Test') {
             steps {
                 sh './mvnw test'
+            }
+        }
+        stage('Build & push Docker image') {
+            steps {
+                sh './mvnw compile jib:build'
             }
         }
     }

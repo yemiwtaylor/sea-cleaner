@@ -1,8 +1,8 @@
-package com.marshmallow.yemitechnicalchallenge.service;
+package com.marshmallow.mywtaylortechnicalchallenge.service;
 
-import com.marshmallow.yemitechnicalchallenge.SeaCleanerException;
-import com.marshmallow.yemitechnicalchallenge.model.CoordinatesResponse;
-import com.marshmallow.yemitechnicalchallenge.model.Instructions;
+import com.marshmallow.mywtaylortechnicalchallenge.SeaCleanerException;
+import com.marshmallow.mywtaylortechnicalchallenge.model.CoordinatesResponse;
+import com.marshmallow.mywtaylortechnicalchallenge.model.Instructions;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;

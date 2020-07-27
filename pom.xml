@@ -9,13 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.marshmallow</groupId>
-	<artifactId>yemi-technical-challenge</artifactId>
+	<artifactId>mywtaylor-technical-challenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>yemi-technical-challenge</name>
+	<name>mywtaylor-technical-challenge</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
+		<dockerfile-maven-version>1.4.13</dockerfile-maven-version>
 	</properties>
 
 	<dependencies>
@@ -59,6 +60,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>2.4.0</version>
+				<configuration>
+					<to>
+						<image>mywtaylor/seacleaner:${project.version}</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

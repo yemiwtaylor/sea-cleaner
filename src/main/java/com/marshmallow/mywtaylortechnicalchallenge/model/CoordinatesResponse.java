@@ -1,4 +1,4 @@
-package com.marshmallow.yemitechnicalchallenge.model;
+package com.marshmallow.mywtaylortechnicalchallenge.model;
 
 import java.util.List;
 

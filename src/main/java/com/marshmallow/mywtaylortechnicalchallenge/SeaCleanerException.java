@@ -1,4 +1,4 @@
-package com.marshmallow.yemitechnicalchallenge;
+package com.marshmallow.mywtaylortechnicalchallenge;
 
 import org.springframework.http.HttpStatus;
 

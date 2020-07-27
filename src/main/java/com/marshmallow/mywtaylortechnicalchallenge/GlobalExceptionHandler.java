@@ -1,4 +1,4 @@
-package com.marshmallow.yemitechnicalchallenge;
+package com.marshmallow.mywtaylortechnicalchallenge;
 
 import java.util.HashMap;
 import java.util.Map;
