@@ -32,7 +32,7 @@ Example:
 
 ## Output
 
-Service output must be returned as JSON.
+Service output will be returned as JSON.
 
 Example (matching the input above):
 
@@ -49,5 +49,5 @@ Please run the command `./mvnw spring-boot:run` in order to start the applicatio
 
 If you would rather run a docker container, it can be downloaded here:
 
-The application runs on port 8080 by default, and has only 1 endpoint, which accepts a PUT request on the path `/instructions`
+The application runs on port `8080` by default, and has only 1 endpoint, which accepts a PUT request on the path `/instructions`
 For example, via Postman you could: `PUT http://localhost:8080/instructions` with the body defined above
