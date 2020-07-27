@@ -1,4 +1,4 @@
-package com.marshmallow.mywtaylortechnicalchallenge;
+package com.mywtaylor.seacleaner;
 
 import java.util.HashMap;
 import java.util.Map;

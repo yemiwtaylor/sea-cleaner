@@ -1,4 +1,4 @@
-package com.marshmallow.mywtaylortechnicalchallenge.model;
+package com.mywtaylor.seacleaner.model;
 
 import java.util.List;
 import javax.validation.Valid;

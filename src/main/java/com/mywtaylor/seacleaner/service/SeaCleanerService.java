@@ -1,8 +1,8 @@
-package com.marshmallow.mywtaylortechnicalchallenge.service;
+package com.mywtaylor.seacleaner.service;
 
-import com.marshmallow.mywtaylortechnicalchallenge.SeaCleanerException;
-import com.marshmallow.mywtaylortechnicalchallenge.model.CoordinatesResponse;
-import com.marshmallow.mywtaylortechnicalchallenge.model.Instructions;
+import com.mywtaylor.seacleaner.model.CoordinatesResponse;
+import com.mywtaylor.seacleaner.model.Instructions;
+import com.mywtaylor.seacleaner.SeaCleanerException.BadRequestError;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -36,11 +36,11 @@ public class SeaCleanerService {
           currentCleanerPosition[0] -= 1;
           break;
         default:
-          throw new SeaCleanerException.BadRequestError("unrecognised direction, must be N, E, S, W");
+          throw new BadRequestError("unrecognised direction, must be N, E, S, W");
       }
 
       if (currentCleanerPosition[0] > areaSize[0]-1 || currentCleanerPosition[1] > areaSize[1]-1) {
-        throw new SeaCleanerException.BadRequestError("invalid instructions: cleaner out of bounds");
+        throw new BadRequestError("invalid instructions: cleaner out of bounds");
       }
 
       // remove patch once cleaned

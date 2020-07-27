@@ -1,8 +1,8 @@
-package com.marshmallow.mywtaylortechnicalchallenge.controller;
+package com.mywtaylor.seacleaner.controller;
 
-import com.marshmallow.mywtaylortechnicalchallenge.model.CoordinatesResponse;
-import com.marshmallow.mywtaylortechnicalchallenge.model.Instructions;
-import com.marshmallow.mywtaylortechnicalchallenge.service.SeaCleanerService;
+import com.mywtaylor.seacleaner.model.CoordinatesResponse;
+import com.mywtaylor.seacleaner.model.Instructions;
+import com.mywtaylor.seacleaner.service.SeaCleanerService;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;

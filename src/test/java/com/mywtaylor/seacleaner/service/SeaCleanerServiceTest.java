@@ -1,11 +1,11 @@
-package com.marshmallow.mywtaylortechnicalchallenge.service;
+package com.mywtaylor.seacleaner.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.marshmallow.mywtaylortechnicalchallenge.SeaCleanerException;
-import com.marshmallow.mywtaylortechnicalchallenge.model.CoordinatesResponse;
-import com.marshmallow.mywtaylortechnicalchallenge.model.Instructions;
+import com.mywtaylor.seacleaner.model.CoordinatesResponse;
+import com.mywtaylor.seacleaner.model.Instructions;
+import com.mywtaylor.seacleaner.SeaCleanerException.BadRequestError;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -32,7 +32,7 @@ class SeaCleanerServiceTest {
 
     assertThatThrownBy(() -> underTest.processCleaning(instructions))
         .withFailMessage("unrecognised direction, must be N, E, S, W")
-        .isInstanceOf(SeaCleanerException.BadRequestError.class);
+        .isInstanceOf(BadRequestError.class);
   }
 
   @Test
@@ -48,7 +48,7 @@ class SeaCleanerServiceTest {
 
     assertThatThrownBy(() -> underTest.processCleaning(instructions))
         .withFailMessage("instructions lead cleaner out of bounds")
-        .isInstanceOf(SeaCleanerException.BadRequestError.class);
+        .isInstanceOf(BadRequestError.class);
   }
 
   @Test

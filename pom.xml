@@ -8,11 +8,11 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.marshmallow</groupId>
-	<artifactId>mywtaylor-technical-challenge</artifactId>
+	<groupId>com.mywtaylor</groupId>
+	<artifactId>sea-cleaner</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mywtaylor-technical-challenge</name>
-	<description>Demo project for Spring Boot</description>
+	<name>sea-cleaner</name>
+	<description>Sea Cleaner Application</description>
 
 	<properties>
 		<java.version>11</java.version>
